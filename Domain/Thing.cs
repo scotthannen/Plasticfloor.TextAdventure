@@ -2,10 +2,26 @@
 {
     public class Thing
     {
-        public string Name { get; set; }
+        public Thing(string name, Location location, bool playerCanTake)
+        {
+            if (string.IsNullOrEmpty(name))
+            {
+                throw new ArgumentException("Name is required");
+            }
 
-        public Location Location { get; set; }
+            Name = name;
+            Location = location ?? throw new ArgumentNullException("location");
+            PlayerCanTake = playerCanTake;
+        }
+        public string Name { get;  }
 
-        public bool PlayerCanTake { get; set; }
+        public Location Location { get; private set; }
+
+        public bool PlayerCanTake { get;  }
+
+        public void SetLocation(Location newLocation)
+        {
+            this.Location = newLocation ?? throw new ArgumentNullException();
+        }
     }
 }

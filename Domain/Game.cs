@@ -10,6 +10,7 @@ namespace Domain
             this.Locations = new List<Location>();
             this.Things = new List<Thing>();
             this.PlayerInventory = new List<Thing>();
+            this.PlayerInventoryLocation = new Location { Name = "Player inventory" };
         }
 
         public Guid Id { get; set; }
@@ -21,5 +22,7 @@ namespace Domain
         public List<Thing> PlayerInventory { get; set; }
 
         public Location PlayerLocation { get; set; }
+
+        public Location PlayerInventoryLocation { get; set; }
     }
 }
