@@ -9,10 +9,10 @@ namespace Application.Tests
     {
         private readonly Dictionary<Guid, Game> _games;
 
-        public FakeGameRepository() => this._games = new Dictionary<Guid, Game>();
+        public FakeGameRepository() => _games = new Dictionary<Guid, Game>();
 
-        public async Task<Game> LoadGame(Guid gameId) => this._games.ContainsKey(gameId) ? this._games[gameId] : (Game)null;
+        public async Task<Game> LoadGame(Guid gameId) => _games.ContainsKey(gameId) ? _games[gameId] : (Game)null;
 
-        public async Task SaveGame(Game game) => this._games[game.Id] = game;
+        public async Task SaveGame(Game game) => _games[game.Id] = game;
     }
 }

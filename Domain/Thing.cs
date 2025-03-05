@@ -15,13 +15,13 @@
         }
         public string Name { get;  }
 
-        public Location Location { get; private set; }
+        public Location Location { get; set; }
 
         public bool PlayerCanTake { get;  }
 
         public void SetLocation(Location newLocation)
         {
-            this.Location = newLocation ?? throw new ArgumentNullException();
+            Location = newLocation ?? throw new ArgumentNullException();
         }
     }
 }

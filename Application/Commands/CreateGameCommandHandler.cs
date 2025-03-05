@@ -6,13 +6,13 @@ namespace Application.Commands
     {
         private readonly IGameRepository _gameRepository;
 
-        public CreateGameCommandHandler(IGameRepository gameRepository) => this._gameRepository = gameRepository;
+        public CreateGameCommandHandler(IGameRepository gameRepository) => _gameRepository = gameRepository;
 
         public async Task<ActionResponse> Handle(CreateGameCommand command)
         {
             Game game = new Game() { Id = command.GameId };
-            this.BuildGame(game);
-            await this._gameRepository.SaveGame(game);
+            BuildGame(game);
+            await _gameRepository.SaveGame(game);
             ActionResponse actionResponse = ActionResponse.Ok();
             game = (Game)null;
             return actionResponse;

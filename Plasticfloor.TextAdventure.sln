@@ -3,15 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{ED3A3650-3662-4D84-B78B-17F2F2246ACF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{ED3A3650-3662-4D84-B78B-17F2F2246ACF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{3C65FC30-CD77-4157-9D11-01F738759ED5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{3C65FC30-CD77-4157-9D11-01F738759ED5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{E585CCC3-B63E-4451-84BC-3105B7287613}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{E585CCC3-B63E-4451-84BC-3105B7287613}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3FB108F2-5D88-4519-ADE6-4A8D2898DB90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Tests", "Application.Tests\Application.Tests.csproj", "{A9DAAA35-1AE7-46CE-851F-DDAACCB307EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Tests", "Application.Tests\Application.Tests.csproj", "{A9DAAA35-1AE7-46CE-851F-DDAACCB307EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BodySwapAdventure", "BodySwapAdventure\BodySwapAdventure.csproj", "{09D0DE32-4D79-454F-BF60-9F7B021C1C9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{50D74B60-E9E6-486B-AF7C-8C11DBED99D1}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +42,10 @@ Global
 		{A9DAAA35-1AE7-46CE-851F-DDAACCB307EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9DAAA35-1AE7-46CE-851F-DDAACCB307EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9DAAA35-1AE7-46CE-851F-DDAACCB307EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D0DE32-4D79-454F-BF60-9F7B021C1C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D0DE32-4D79-454F-BF60-9F7B021C1C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D0DE32-4D79-454F-BF60-9F7B021C1C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D0DE32-4D79-454F-BF60-9F7B021C1C9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

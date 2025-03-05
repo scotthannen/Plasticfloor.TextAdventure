@@ -8,12 +8,12 @@ public class TakeThingCommandHandler : ICommandHandler<TakeThingCommand>
 
     public TakeThingCommandHandler(IGameRepository gameRepository)
     {
-        this._gameRepository = gameRepository;
+        _gameRepository = gameRepository;
     }
 
     public async Task<ActionResponse> Handle(TakeThingCommand command)
     {
-        Game game = await this._gameRepository.LoadGame(command.GameId);
+        Game game = await _gameRepository.LoadGame(command.GameId);
 
 
         if (game.PlayerInventory.Contains(command.Thing))

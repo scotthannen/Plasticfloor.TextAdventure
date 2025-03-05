@@ -7,7 +7,7 @@ namespace Application.Commands
     {
         public ExitToDirectionCommand(Guid gameId, ExitDirection direction)
           : base(gameId)
-          => this.Direction = direction;
+          => Direction = direction;
 
         public ExitDirection Direction { get; set; }
     }
